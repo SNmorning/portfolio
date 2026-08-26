@@ -11,12 +11,11 @@ export function SiteHeader() {
         ALBANO
       </a>
 
-      <div className={styles.nav} aria-label="页面定位">
-        <span className={`${styles.navLink} ${styles.active}`}>首页</span>
-        <span className={styles.navLink}>项目</span>
-      </div>
-
-      <span className={styles.contactButton}>联系我</span>
+      <nav className={styles.nav} aria-label="页面定位">
+        <a className={`${styles.navLink} ${styles.active}`} href="#home">
+          首页
+        </a>
+      </nav>
     </header>
   );
 }

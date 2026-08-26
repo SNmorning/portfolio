@@ -45,8 +45,8 @@ Runs ESLint, TypeScript type-check, and a production build in sequence.
 
 ```text
 src/app/          Page entry, root layout, and global styles
-src/components/   Page components
-src/data/         Works and experience data
+src/components/   Page components (Hero, Header)
+src/lib/          Utilities
 public/           Static assets
 ```
 
