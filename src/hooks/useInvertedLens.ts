@@ -185,7 +185,7 @@ export function useInvertedLens() {
     };
   }, []);
 
-  const drawMotion = () => {
+  const drawMotion = (timestamp: number) => {
     const maskLayer = maskLayerRef.current;
     const frontFace = frontFaceRef.current;
     if (!maskLayer || !frontFace) {
@@ -236,7 +236,7 @@ export function useInvertedLens() {
     // 椭圆参数：基础半径 + 速度方向拉长 + 静止呼吸 + 边缘压扁铺开
     const baseR = Math.max(radiusRef.current, 0);
     const speed = Math.hypot(velocity.x, velocity.y);
-    const now = performance.now();
+    const now = timestamp;
 
     let angle = Math.atan2(velocity.y, velocity.x);
     let rAlong = baseR + Math.min(speed * lensStretch, baseR * 0.6);
