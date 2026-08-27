@@ -253,24 +253,6 @@
   font-size: 13px;
 }
 
-.aboutCopy {
-  min-height: 0;
-  column-count: 2;
-  column-gap: 56px;
-  overflow: auto;
-  overscroll-behavior: contain;
-  color: rgb(255 255 255 / 88%);
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 1.72;
-  text-align: justify;
-}
-
-.aboutCopy p {
-  margin: 0 0 16px;
-  break-inside: avoid;
-}
-
 .signature {
   display: block;
   margin-top: 16px;
@@ -317,25 +299,9 @@
   .aboutHeading {
     font-size: 44px;
   }
-
-  .aboutCopy {
-    column-gap: 30px;
-    font-size: 12px;
-    line-height: 1.6;
-  }
 }
 
 @media (max-width: 480px) {
-  .pattern {
-    inset: -20px -100px;
-    font-size: 30px;
-    line-height: 1.7;
-  }
-
-  .invertedPattern {
-    font-size: 22px;
-  }
-
   .heroTitle {
     font-size: 34px;
   }
@@ -368,17 +334,6 @@
   .backPrompt {
     padding-top: 3px;
     font-size: 8px;
-  }
-
-  .aboutCopy {
-    column-count: 1;
-    font-size: 8px;
-    line-height: 1.4;
-    text-align: left;
-  }
-
-  .aboutCopy p {
-    margin-bottom: 7px;
   }
 
   .signature {

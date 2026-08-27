@@ -14,38 +14,17 @@
 }
 
 .logoLink,
-.nav,
-.contactButton {
+.nav {
   pointer-events: auto;
 }
 
 .logoLink {
-  position: relative;
-  display: inline-block;
   color: #0b0b0b;
   font-size: 19px;
   font-weight: 700;
   letter-spacing: 0.18em;
   line-height: 1;
   text-decoration: none;
-}
-
-.logoInvert {
-  position: absolute;
-  inset: -3px -6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #000;
-  color: #fff;
-  opacity: 0;
-  transition: opacity 150ms ease-out;
-  pointer-events: none;
-}
-
-.logoLink:hover .logoInvert,
-.logoLink:focus-visible .logoInvert {
-  opacity: 1;
 }
 
 .nav {
@@ -91,35 +70,8 @@
   background: rgb(0 0 0 / 6%);
 }
 
-.contactButton {
-  display: flex;
-  height: 50px;
-  padding: 0 22px;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  background: #111;
-  border-radius: 999px;
-  box-shadow: 0 5px 16px rgb(0 0 0 / 10%);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1;
-  text-decoration: none;
-  transition:
-    background-color 250ms ease,
-    box-shadow 250ms ease,
-    transform 250ms ease;
-}
-
-.contactButton:hover {
-  background: #2a2a2a;
-  box-shadow: 0 8px 20px rgb(0 0 0 / 14%);
-  transform: translateY(-1px);
-}
-
 .logoLink:focus-visible,
-.navLink:focus-visible,
-.contactButton:focus-visible {
+.navLink:focus-visible {
   outline: 2px solid #111;
   outline-offset: 3px;
 }
@@ -146,11 +98,6 @@
     font-size: 18px;
   }
 
-  .contactButton {
-    height: 44px;
-    padding: 0 17px;
-    font-size: 13px;
-  }
 }
 
 @media (max-width: 560px) {
@@ -170,21 +117,10 @@
     font-size: 16px;
   }
 
-  .contactButton {
-    height: 40px;
-    padding: 0 16px;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .navLink,
-  .contactButton {
+  .navLink {
     transition: none;
-  }
-}
-
-@media (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) {
-  .logoInvert {
-    display: none;
   }
 }

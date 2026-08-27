@@ -122,7 +122,7 @@ export function useInvertedLens() {
   const [isFlipped, setIsFlipped] = useState(false);
   const maskLayerRef = useRef<HTMLDivElement>(null);
   const frontFaceRef = useRef<HTMLDivElement>(null);
-  const frameRef = useRef<HTMLElement>(null);
+  const frameRef = useRef<HTMLDivElement>(null);
   const animationRef = useRef<number | null>(null);
   const targetRef = useRef<Point>({ x: -300, y: -300 });
   const positionRef = useRef<Point>({ x: -300, y: -300 });

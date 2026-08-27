@@ -37,7 +37,7 @@ export function HeroSection() {
   } = useInvertedLens();
 
   return (
-    <section
+    <div
       id="home"
       className={styles.heroFrame}
       ref={frameRef}
@@ -102,6 +102,6 @@ export function HeroSection() {
           <strong className={styles.signature}>ALBANO</strong>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
